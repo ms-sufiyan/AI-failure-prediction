@@ -58,4 +58,3 @@ def preprocess_single(input_dict: dict, scaler: StandardScaler) -> np.ndarray:
     row = [input_dict[col] for col in FEATURE_COLUMNS]
     arr = np.array(row).reshape(1, -1)
     return scaler.transform(arr)
-# test123
